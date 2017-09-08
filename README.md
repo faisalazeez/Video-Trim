@@ -16,12 +16,12 @@ Croping with preview of video on range slider.
 ```
 * Swift 2.0 and abouve
 * XCode 8 and above
-* iOS 9.0 (Min SDK)
 ```
 ## Author
 
 Faisal Azeez
-<faisalazeez7@gmail.com>
+
+email me @ <faisalazeez7@gmail.com>
 
 
 ## License
