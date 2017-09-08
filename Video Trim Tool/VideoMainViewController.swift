@@ -301,7 +301,7 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
       self.seekVideo(toPos: CGFloat(rangeSlider.upperValue))
       
     }
-
+        
     print(startTime)
   }
   
