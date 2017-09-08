@@ -9,7 +9,7 @@ Croping with preview of video on range slider.
 
 ## ScreenShot
 
-![Alt text](/source.mp4?raw=true "Optional Title")
+![Alt text](/screenshot.gif?raw=true "Optional Title")
 
 ## Requirements
 
