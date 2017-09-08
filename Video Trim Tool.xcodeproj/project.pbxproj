@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1829F01E41C929002BF504 /* LauncherScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1829EF1E41C929002BF504 /* LauncherScreen.jpg */; };
+		3A3AFDAC1E3F288600A717C8 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AFDAB1E3F288600A717C8 /* warning.png */; };
+		3A6636FA1E43197600912862 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6636F91E43197600912862 /* Photos.framework */; };
+		3A6636FC1E437A1500912862 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6636FB1E437A1500912862 /* RangeSlider.swift */; };
+		3A6D2D101E38C75E008A41A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D2D0F1E38C75E008A41A0 /* AppDelegate.swift */; };
+		3A6D2D121E38C75E008A41A0 /* VideoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D2D111E38C75E008A41A0 /* VideoMainViewController.swift */; };
+		3A6D2D151E38C75E008A41A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D2D131E38C75E008A41A0 /* Main.storyboard */; };
+		3A6D2D171E38C75E008A41A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D2D161E38C75E008A41A0 /* Assets.xcassets */; };
+		3A6D2D1A1E38C75E008A41A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D2D181E38C75E008A41A0 /* LaunchScreen.storyboard */; };
+		3A6D2D251E38C75E008A41A0 /* Video_Trim_ToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D2D241E38C75E008A41A0 /* Video_Trim_ToolTests.swift */; };
+		3A6D2D301E38C75E008A41A0 /* Video_Trim_ToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D2D2F1E38C75E008A41A0 /* Video_Trim_ToolUITests.swift */; };
+		3A6D2D3F1E38D8E0008A41A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6D2D3E1E38D8E0008A41A0 /* MobileCoreServices.framework */; };
+		3A6D2D411E38D8E7008A41A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6D2D401E38D8E7008A41A0 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A6D2D211E38C75E008A41A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6D2D041E38C75E008A41A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6D2D0B1E38C75E008A41A0;
+			remoteInfo = "Video Trim Tool";
+		};
+		3A6D2D2C1E38C75E008A41A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6D2D041E38C75E008A41A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6D2D0B1E38C75E008A41A0;
+			remoteInfo = "Video Trim Tool";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A1829EF1E41C929002BF504 /* LauncherScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LauncherScreen.jpg; sourceTree = "<group>"; };
+		3A3AFDAB1E3F288600A717C8 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		3A6636F91E43197600912862 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3A6636FB1E437A1500912862 /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		3A6D2D0C1E38C75E008A41A0 /* Video Trim Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video Trim Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6D2D0F1E38C75E008A41A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A6D2D111E38C75E008A41A0 /* VideoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMainViewController.swift; sourceTree = "<group>"; };
+		3A6D2D141E38C75E008A41A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A6D2D161E38C75E008A41A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A6D2D191E38C75E008A41A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A6D2D1B1E38C75E008A41A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6D2D201E38C75E008A41A0 /* Video Trim ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Video Trim ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6D2D241E38C75E008A41A0 /* Video_Trim_ToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_Trim_ToolTests.swift; sourceTree = "<group>"; };
+		3A6D2D261E38C75E008A41A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6D2D2B1E38C75E008A41A0 /* Video Trim ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Video Trim ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6D2D2F1E38C75E008A41A0 /* Video_Trim_ToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_Trim_ToolUITests.swift; sourceTree = "<group>"; };
+		3A6D2D311E38C75E008A41A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6D2D3E1E38D8E0008A41A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3A6D2D401E38D8E7008A41A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A6D2D091E38C75E008A41A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6636FA1E43197600912862 /* Photos.framework in Frameworks */,
+				3A6D2D411E38D8E7008A41A0 /* AVFoundation.framework in Frameworks */,
+				3A6D2D3F1E38D8E0008A41A0 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D1D1E38C75E008A41A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D281E38C75E008A41A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A682A961E3B586B002E7785 /* TrimRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3A6636FB1E437A1500912862 /* RangeSlider.swift */,
+			);
+			name = TrimRangeSlider;
+			sourceTree = "<group>";
+		};
+		3A6D2D031E38C75E008A41A0 = {
+			isa = PBXGroup;
+			children = (
+				3A6D2D0E1E38C75E008A41A0 /* Video Trim Tool */,
+				3A6D2D231E38C75E008A41A0 /* Video Trim ToolTests */,
+				3A6D2D2E1E38C75E008A41A0 /* Video Trim ToolUITests */,
+				3A6D2D0D1E38C75E008A41A0 /* Products */,
+				3A6D2D3D1E38D8E0008A41A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A6D2D0D1E38C75E008A41A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A6D2D0C1E38C75E008A41A0 /* Video Trim Tool.app */,
+				3A6D2D201E38C75E008A41A0 /* Video Trim ToolTests.xctest */,
+				3A6D2D2B1E38C75E008A41A0 /* Video Trim ToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A6D2D0E1E38C75E008A41A0 /* Video Trim Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3A682A961E3B586B002E7785 /* TrimRangeSlider */,
+				3A6D2D0F1E38C75E008A41A0 /* AppDelegate.swift */,
+				3A6D2D111E38C75E008A41A0 /* VideoMainViewController.swift */,
+				3A6D2D131E38C75E008A41A0 /* Main.storyboard */,
+				3A6D2D161E38C75E008A41A0 /* Assets.xcassets */,
+				3A6D2D181E38C75E008A41A0 /* LaunchScreen.storyboard */,
+				3A6D2D1B1E38C75E008A41A0 /* Info.plist */,
+				3A3AFDAB1E3F288600A717C8 /* warning.png */,
+				3A1829EF1E41C929002BF504 /* LauncherScreen.jpg */,
+			);
+			path = "Video Trim Tool";
+			sourceTree = "<group>";
+		};
+		3A6D2D231E38C75E008A41A0 /* Video Trim ToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6D2D241E38C75E008A41A0 /* Video_Trim_ToolTests.swift */,
+				3A6D2D261E38C75E008A41A0 /* Info.plist */,
+			);
+			path = "Video Trim ToolTests";
+			sourceTree = "<group>";
+		};
+		3A6D2D2E1E38C75E008A41A0 /* Video Trim ToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6D2D2F1E38C75E008A41A0 /* Video_Trim_ToolUITests.swift */,
+				3A6D2D311E38C75E008A41A0 /* Info.plist */,
+			);
+			path = "Video Trim ToolUITests";
+			sourceTree = "<group>";
+		};
+		3A6D2D3D1E38D8E0008A41A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A6636F91E43197600912862 /* Photos.framework */,
+				3A6D2D401E38D8E7008A41A0 /* AVFoundation.framework */,
+				3A6D2D3E1E38D8E0008A41A0 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A6D2D0B1E38C75E008A41A0 /* Video Trim Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6D2D341E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim Tool" */;
+			buildPhases = (
+				3A6D2D081E38C75E008A41A0 /* Sources */,
+				3A6D2D091E38C75E008A41A0 /* Frameworks */,
+				3A6D2D0A1E38C75E008A41A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Video Trim Tool";
+			productName = "Video Trim Tool";
+			productReference = 3A6D2D0C1E38C75E008A41A0 /* Video Trim Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A6D2D1F1E38C75E008A41A0 /* Video Trim ToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6D2D371E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolTests" */;
+			buildPhases = (
+				3A6D2D1C1E38C75E008A41A0 /* Sources */,
+				3A6D2D1D1E38C75E008A41A0 /* Frameworks */,
+				3A6D2D1E1E38C75E008A41A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6D2D221E38C75E008A41A0 /* PBXTargetDependency */,
+			);
+			name = "Video Trim ToolTests";
+			productName = "Video Trim ToolTests";
+			productReference = 3A6D2D201E38C75E008A41A0 /* Video Trim ToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A6D2D2A1E38C75E008A41A0 /* Video Trim ToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6D2D3A1E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolUITests" */;
+			buildPhases = (
+				3A6D2D271E38C75E008A41A0 /* Sources */,
+				3A6D2D281E38C75E008A41A0 /* Frameworks */,
+				3A6D2D291E38C75E008A41A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6D2D2D1E38C75E008A41A0 /* PBXTargetDependency */,
+			);
+			name = "Video Trim ToolUITests";
+			productName = "Video Trim ToolUITests";
+			productReference = 3A6D2D2B1E38C75E008A41A0 /* Video Trim ToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A6D2D041E38C75E008A41A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Faisal;
+				TargetAttributes = {
+					3A6D2D0B1E38C75E008A41A0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3N3C88D973;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					3A6D2D1F1E38C75E008A41A0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3N3C88D973;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6D2D0B1E38C75E008A41A0;
+					};
+					3A6D2D2A1E38C75E008A41A0 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3N3C88D973;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6D2D0B1E38C75E008A41A0;
+					};
+				};
+			};
+			buildConfigurationList = 3A6D2D071E38C75E008A41A0 /* Build configuration list for PBXProject "Video Trim Tool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A6D2D031E38C75E008A41A0;
+			productRefGroup = 3A6D2D0D1E38C75E008A41A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A6D2D0B1E38C75E008A41A0 /* Video Trim Tool */,
+				3A6D2D1F1E38C75E008A41A0 /* Video Trim ToolTests */,
+				3A6D2D2A1E38C75E008A41A0 /* Video Trim ToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A6D2D0A1E38C75E008A41A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1829F01E41C929002BF504 /* LauncherScreen.jpg in Resources */,
+				3A3AFDAC1E3F288600A717C8 /* warning.png in Resources */,
+				3A6D2D1A1E38C75E008A41A0 /* LaunchScreen.storyboard in Resources */,
+				3A6D2D171E38C75E008A41A0 /* Assets.xcassets in Resources */,
+				3A6D2D151E38C75E008A41A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D1E1E38C75E008A41A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D291E38C75E008A41A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A6D2D081E38C75E008A41A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6D2D121E38C75E008A41A0 /* VideoMainViewController.swift in Sources */,
+				3A6636FC1E437A1500912862 /* RangeSlider.swift in Sources */,
+				3A6D2D101E38C75E008A41A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D1C1E38C75E008A41A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6D2D251E38C75E008A41A0 /* Video_Trim_ToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6D2D271E38C75E008A41A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6D2D301E38C75E008A41A0 /* Video_Trim_ToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A6D2D221E38C75E008A41A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6D2D0B1E38C75E008A41A0 /* Video Trim Tool */;
+			targetProxy = 3A6D2D211E38C75E008A41A0 /* PBXContainerItemProxy */;
+		};
+		3A6D2D2D1E38C75E008A41A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6D2D0B1E38C75E008A41A0 /* Video Trim Tool */;
+			targetProxy = 3A6D2D2C1E38C75E008A41A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A6D2D131E38C75E008A41A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6D2D141E38C75E008A41A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A6D2D181E38C75E008A41A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6D2D191E38C75E008A41A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A6D2D321E38C75E008A41A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A6D2D331E38C75E008A41A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A6D2D351E38C75E008A41A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3A6D2D361E38C75E008A41A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3A6D2D381E38C75E008A41A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-ToolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video Trim Tool.app/Video Trim Tool";
+			};
+			name = Debug;
+		};
+		3A6D2D391E38C75E008A41A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim ToolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-ToolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video Trim Tool.app/Video Trim Tool";
+			};
+			name = Release;
+		};
+		3A6D2D3B1E38C75E008A41A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim ToolUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-ToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Video Trim Tool";
+			};
+			name = Debug;
+		};
+		3A6D2D3C1E38C75E008A41A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3N3C88D973;
+				INFOPLIST_FILE = "Video Trim ToolUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "faisal.Video-Trim-ToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Video Trim Tool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A6D2D071E38C75E008A41A0 /* Build configuration list for PBXProject "Video Trim Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6D2D321E38C75E008A41A0 /* Debug */,
+				3A6D2D331E38C75E008A41A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6D2D341E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6D2D351E38C75E008A41A0 /* Debug */,
+				3A6D2D361E38C75E008A41A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6D2D371E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6D2D381E38C75E008A41A0 /* Debug */,
+				3A6D2D391E38C75E008A41A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6D2D3A1E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6D2D3B1E38C75E008A41A0 /* Debug */,
+				3A6D2D3C1E38C75E008A41A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A6D2D041E38C75E008A41A0 /* Project object */;
+}
