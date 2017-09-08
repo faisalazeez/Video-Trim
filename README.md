@@ -9,7 +9,7 @@ Croping with preview of video on range slider.
 
 ## ScreenShot
 
-![Alt text](/simulator-screen-shot-07-feb-2.jpg?raw=true "Optional Title")
+![Alt text](/source.mp4?raw=true "Optional Title")
 
 ## Requirements
 
