@@ -1,14 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UDq-Mr-Vn3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="wr8-vb-KLc">
+            <objects>
+                <viewController id="yW4-Bq-jlD" customClass="HomeViewController" customModule="Video_Trim_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uP4-nX-igV"/>
+                        <viewControllerLayoutGuide type="bottom" id="VDX-lM-hqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xZk-6p-rke">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-cf-826" userLabel="audioView" customClass="viewClass" customModule="Video_Trim_Tool" customModuleProvider="target">
+                                <rect key="frame" x="56" y="154" width="263" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMg-wf-Tas">
+                                        <rect key="frame" x="143" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="PiD-hf-gGC"/>
+                                            <constraint firstAttribute="height" constant="100" id="rt8-FW-KRZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="001-technology"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Crop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22P-I8-9rj">
+                                        <rect key="frame" x="20" y="59.5" width="103" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-na-MaS" userLabel="fullButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="QWu-PT-KuF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="PkQ-W7-EIo" kind="show" id="GYX-ch-O1P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DMg-wf-Tas" firstAttribute="centerY" secondItem="Ob4-cf-826" secondAttribute="centerY" id="21X-vU-S9a"/>
+                                    <constraint firstAttribute="bottom" secondItem="qaP-na-MaS" secondAttribute="bottom" id="2w1-ih-ZQB"/>
+                                    <constraint firstItem="qaP-na-MaS" firstAttribute="top" secondItem="Ob4-cf-826" secondAttribute="top" id="A4l-zP-ZNM"/>
+                                    <constraint firstAttribute="trailing" secondItem="DMg-wf-Tas" secondAttribute="trailing" constant="20" id="DWx-RI-EZH"/>
+                                    <constraint firstItem="qaP-na-MaS" firstAttribute="leading" secondItem="Ob4-cf-826" secondAttribute="leading" id="K7p-zh-CBE"/>
+                                    <constraint firstAttribute="height" constant="140" id="PWD-Yx-W3r"/>
+                                    <constraint firstItem="DMg-wf-Tas" firstAttribute="leading" secondItem="22P-I8-9rj" secondAttribute="trailing" constant="20" id="T5l-Lp-3M9"/>
+                                    <constraint firstItem="22P-I8-9rj" firstAttribute="leading" secondItem="Ob4-cf-826" secondAttribute="leading" constant="20" id="kdz-6D-bVt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qaP-na-MaS" secondAttribute="trailing" id="szA-Ul-cJJ"/>
+                                    <constraint firstItem="22P-I8-9rj" firstAttribute="centerY" secondItem="DMg-wf-Tas" secondAttribute="centerY" id="xOL-Ce-ns5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmr-qD-aSs" userLabel="videoView" customClass="viewClass" customModule="Video_Trim_Tool" customModuleProvider="target">
+                                <rect key="frame" x="56" y="394" width="263" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64B-UK-Dj8" userLabel="fullButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="140"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="KVg-YM-8Hz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-Ce-3go">
+                                        <rect key="frame" x="143" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Sdj-i4-Sz7"/>
+                                            <constraint firstAttribute="height" constant="100" id="y0b-Tf-4TW"/>
+                                        </constraints>
+                                        <state key="normal" image="002-video-camera"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Crop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiv-FF-dwQ">
+                                        <rect key="frame" x="20" y="60" width="103" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="64B-UK-Dj8" firstAttribute="top" secondItem="Qmr-qD-aSs" secondAttribute="top" id="5rw-29-2R2"/>
+                                    <constraint firstItem="qiv-FF-dwQ" firstAttribute="centerY" secondItem="hpd-Ce-3go" secondAttribute="centerY" id="DN4-Bu-3nO"/>
+                                    <constraint firstItem="64B-UK-Dj8" firstAttribute="leading" secondItem="Qmr-qD-aSs" secondAttribute="leading" id="Eix-0u-k44"/>
+                                    <constraint firstAttribute="trailing" secondItem="64B-UK-Dj8" secondAttribute="trailing" id="L66-bo-7kf"/>
+                                    <constraint firstAttribute="height" constant="140" id="V8V-nU-Loz"/>
+                                    <constraint firstItem="hpd-Ce-3go" firstAttribute="centerY" secondItem="Qmr-qD-aSs" secondAttribute="centerY" id="bDh-9M-yJ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="64B-UK-Dj8" secondAttribute="bottom" id="dRe-n7-FCe"/>
+                                    <constraint firstAttribute="trailing" secondItem="hpd-Ce-3go" secondAttribute="trailing" constant="20" id="fd6-sI-4RV"/>
+                                    <constraint firstItem="hpd-Ce-3go" firstAttribute="leading" secondItem="qiv-FF-dwQ" secondAttribute="trailing" constant="20" id="mjE-80-XVD"/>
+                                    <constraint firstItem="qiv-FF-dwQ" firstAttribute="leading" secondItem="Qmr-qD-aSs" secondAttribute="leading" constant="20" id="zsZ-g6-irF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qmr-qD-aSs" firstAttribute="leading" secondItem="xZk-6p-rke" secondAttribute="leadingMargin" constant="40" id="9WT-sl-9fD"/>
+                            <constraint firstItem="Ob4-cf-826" firstAttribute="leading" secondItem="xZk-6p-rke" secondAttribute="leadingMargin" constant="40" id="E12-C6-R9z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ob4-cf-826" secondAttribute="trailing" constant="40" id="Lna-4f-Sbj"/>
+                            <constraint firstItem="Qmr-qD-aSs" firstAttribute="top" secondItem="Ob4-cf-826" secondAttribute="bottom" constant="100" id="V0E-rO-gIN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qmr-qD-aSs" secondAttribute="trailing" constant="40" id="bHi-eT-Qtb"/>
+                            <constraint firstItem="Ob4-cf-826" firstAttribute="top" secondItem="uP4-nX-igV" secondAttribute="bottom" constant="70" id="yG3-iY-Tz2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cti-u9-FKh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFG-Ya-yWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666.39999999999998" y="156.97151424287858"/>
+        </scene>
+        <!--Audio View Controller-->
+        <scene sceneID="vP5-vE-fmA">
+            <objects>
+                <viewController title="Audio View Controller" id="PkQ-W7-EIo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HSj-kN-GNl"/>
+                        <viewControllerLayoutGuide type="bottom" id="NTY-LZ-pHW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xEJ-1R-O4b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObZ-mZ-ul2" customClass="viewClass" customModule="Video_Trim_Tool" customModuleProvider="target">
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTx-8v-oqJ" customClass="buttonClass" customModule="Video_Trim_Tool" customModuleProvider="target">
+                                        <rect key="frame" x="117.5" y="80" width="120" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="evc-HV-prB"/>
+                                            <constraint firstAttribute="width" constant="120" id="m8U-3r-QhC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Select Audio">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xTx-8v-oqJ" firstAttribute="top" secondItem="ObZ-mZ-ul2" secondAttribute="top" constant="80" id="7DS-Mx-fe1"/>
+                                    <constraint firstItem="xTx-8v-oqJ" firstAttribute="centerX" secondItem="ObZ-mZ-ul2" secondAttribute="centerX" id="uuT-J9-9Pp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NTY-LZ-pHW" firstAttribute="top" secondItem="ObZ-mZ-ul2" secondAttribute="bottom" constant="10" id="D6b-wF-iQS"/>
+                            <constraint firstAttribute="trailing" secondItem="ObZ-mZ-ul2" secondAttribute="trailing" constant="10" id="Nqp-OY-bHc"/>
+                            <constraint firstItem="ObZ-mZ-ul2" firstAttribute="top" secondItem="HSj-kN-GNl" secondAttribute="bottom" constant="10" id="hZG-xC-NrG"/>
+                            <constraint firstItem="ObZ-mZ-ul2" firstAttribute="leading" secondItem="xEJ-1R-O4b" secondAttribute="leading" constant="10" id="hep-Dd-hjb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9XC-e0-RLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-667" y="987"/>
+        </scene>
         <!--Video Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -22,31 +250,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxK-QJ-SGz">
-                                <rect key="frame" x="10" y="20" width="355" height="637"/>
+                                <rect key="frame" x="10" y="64" width="355" height="593"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykz-EH-gAm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykz-EH-gAm" customClass="buttonClass" customModule="Video_Trim_Tool" customModuleProvider="target">
                                         <rect key="frame" x="117.5" y="80" width="120" height="30"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kFh-L5-f2R"/>
                                             <constraint firstAttribute="width" constant="120" id="z4O-GQ-deK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <state key="normal" title="Select Video">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="selectVideoUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uie-47-U0G"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGD-gl-bOQ">
-                                        <rect key="frame" x="3" y="205.5" width="349" height="226"/>
+                                        <rect key="frame" x="3" y="183.5" width="349" height="226"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="226" id="gJv-Ew-55q"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfR-qN-r3B">
-                                        <rect key="frame" x="10" y="587" width="335" height="40"/>
+                                        <rect key="frame" x="10" y="543" width="335" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-WD-Ppv">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
@@ -61,23 +300,34 @@
                                             <constraint firstAttribute="bottom" secondItem="aV2-WD-Ppv" secondAttribute="bottom" id="zmL-fC-2wD"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-W4-zHX">
-                                        <rect key="frame" x="117.5" y="527" width="120" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-W4-zHX" customClass="buttonClass" customModule="Video_Trim_Tool" customModuleProvider="target">
+                                        <rect key="frame" x="117.5" y="483" width="120" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="0yN-nL-AyN"/>
                                             <constraint firstAttribute="height" constant="30" id="n84-ty-vfI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <state key="normal" title="Crop Video">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="cropVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Vs-cL-WbZ"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FB3-gg-TI4" userLabel="StartView">
-                                        <rect key="frame" x="10" y="519.5" width="60" height="45"/>
+                                        <rect key="frame" x="10" y="475.5" width="60" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7z-bg-mgm">
                                                 <rect key="frame" x="9" y="0.0" width="42" height="10"/>
@@ -115,7 +365,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7J2-VN-wil" userLabel="EndView">
-                                        <rect key="frame" x="285" y="520" width="60" height="45"/>
+                                        <rect key="frame" x="285" y="476" width="60" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf4-89-Fte" userLabel="End Time">
                                                 <rect key="frame" x="9" y="0.0" width="42" height="10"/>
@@ -170,12 +420,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WxK-QJ-SGz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dmr-bj-3bV"/>
                             <constraint firstAttribute="trailing" secondItem="WxK-QJ-SGz" secondAttribute="trailing" constant="10" id="Sef-qM-yy8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WxK-QJ-SGz" secondAttribute="bottom" constant="10" id="ayE-Ud-HzH"/>
                             <constraint firstItem="WxK-QJ-SGz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="yOn-Mw-0zT"/>
+                            <constraint firstItem="WxK-QJ-SGz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zeH-AO-uSP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PBz-lq-7Vu"/>
                     <connections>
                         <outlet property="cropButton" destination="Kad-W4-zHX" id="Ha5-Qz-bfm"/>
                         <outlet property="endTimeText" destination="pcw-Hs-APx" id="4sh-NX-kUb"/>
@@ -191,7 +442,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="202" y="157"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="owP-8F-a5U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UDq-Mr-Vn3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZXl-GL-CSh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yW4-Bq-jlD" kind="relationship" relationship="rootViewController" id="Z4w-Dt-4rV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B23-WL-CIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1450" y="157"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="001-technology" width="128" height="128"/>
+        <image name="002-video-camera" width="128" height="128"/>
+    </resources>
 </document>
