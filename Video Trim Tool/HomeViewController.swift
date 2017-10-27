@@ -16,4 +16,16 @@ class HomeViewController: UIViewController
     super.viewDidLoad()
   }
   
+  override func viewWillAppear(_ animated: Bool)
+  {
+    super.viewWillAppear(true)
+    self.navigationController?.isNavigationBarHidden = true
+  }
+  
+  override func viewWillDisappear(_ animated: Bool)
+  {
+    super.viewWillDisappear(true)
+    self.navigationController?.isNavigationBarHidden = false
+  }
+  
 }

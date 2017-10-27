@@ -23,6 +23,7 @@
 		3A9AB5BE1FA0C36F00C79C42 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AB5BD1FA0C36F00C79C42 /* HomeViewController.swift */; };
 		3A9AB5C01FA0C4F400C79C42 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AB5BF1FA0C4F400C79C42 /* buttonClass.swift */; };
 		3A9AB5C41FA0CBF100C79C42 /* viewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AB5C31FA0CBF100C79C42 /* viewClass.swift */; };
+		3AFC5E7F1FA1D8ED00EF4C7C /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC5E7E1FA1D8ED00EF4C7C /* AudioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		3A9AB5BD1FA0C36F00C79C42 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3A9AB5BF1FA0C4F400C79C42 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
 		3A9AB5C31FA0CBF100C79C42 /* viewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewClass.swift; sourceTree = "<group>"; };
+		3AFC5E7E1FA1D8ED00EF4C7C /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				3A9AB5BD1FA0C36F00C79C42 /* HomeViewController.swift */,
 				3A6D2D111E38C75E008A41A0 /* VideoMainViewController.swift */,
+				3AFC5E7E1FA1D8ED00EF4C7C /* AudioViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				3A6636FC1E437A1500912862 /* RangeSlider.swift in Sources */,
 				3A6D2D101E38C75E008A41A0 /* AppDelegate.swift in Sources */,
 				3A9AB5BE1FA0C36F00C79C42 /* HomeViewController.swift in Sources */,
+				3AFC5E7F1FA1D8ED00EF4C7C /* AudioViewController.swift in Sources */,
 				3A9AB5C41FA0CBF100C79C42 /* viewClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

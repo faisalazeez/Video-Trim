@@ -70,7 +70,7 @@ class VideoMainViewController: UIViewController
   func loadViews()
   {
     //Whole layout view
-    layoutContainer.layer.borderWidth = 1.0
+    layoutContainer.layer.borderWidth = 2.0
     layoutContainer.layer.borderColor = UIColor.white.cgColor
     
     selectButton.layer.cornerRadius = 5.0
@@ -98,7 +98,6 @@ class VideoMainViewController: UIViewController
     imageFrameView.layer.masksToBounds = true
     
     player = AVPlayer()
-
     
     //Allocating NsCahe for temp storage
     self.cache = NSCache()
