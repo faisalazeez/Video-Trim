@@ -1,0 +1,6 @@
+framework module Pods_Video_Trim_ToolTests {
+  umbrella header "Pods-Video Trim ToolTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

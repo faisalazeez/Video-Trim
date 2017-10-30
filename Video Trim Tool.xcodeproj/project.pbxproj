@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31ED97883609E3740B46B959 /* Pods_Video_Trim_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4C095C1316E2EABE781F1A /* Pods_Video_Trim_Tool.framework */; };
 		3A1829F01E41C929002BF504 /* LauncherScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1829EF1E41C929002BF504 /* LauncherScreen.jpg */; };
 		3A3AFDAC1E3F288600A717C8 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AFDAB1E3F288600A717C8 /* warning.png */; };
 		3A6636FA1E43197600912862 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6636F91E43197600912862 /* Photos.framework */; };
@@ -24,6 +25,8 @@
 		3A9AB5C01FA0C4F400C79C42 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AB5BF1FA0C4F400C79C42 /* buttonClass.swift */; };
 		3A9AB5C41FA0CBF100C79C42 /* viewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AB5C31FA0CBF100C79C42 /* viewClass.swift */; };
 		3AFC5E7F1FA1D8ED00EF4C7C /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC5E7E1FA1D8ED00EF4C7C /* AudioViewController.swift */; };
+		9EF67CF13F0AA0589F26A9A1 /* Pods_Video_Trim_ToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304FA52B6FFECE252DAEE4C7 /* Pods_Video_Trim_ToolUITests.framework */; };
+		CF4219AD4D87B7D3CFCB5D6C /* Pods_Video_Trim_ToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CED626A96DDB45605DD06A /* Pods_Video_Trim_ToolTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		304FA52B6FFECE252DAEE4C7 /* Pods_Video_Trim_ToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_ToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1829EF1E41C929002BF504 /* LauncherScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LauncherScreen.jpg; sourceTree = "<group>"; };
 		3A3AFDAB1E3F288600A717C8 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 		3A6636F91E43197600912862 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -67,6 +71,14 @@
 		3A9AB5BF1FA0C4F400C79C42 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
 		3A9AB5C31FA0CBF100C79C42 /* viewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewClass.swift; sourceTree = "<group>"; };
 		3AFC5E7E1FA1D8ED00EF4C7C /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		41BC00F9E08CFC01EC194259 /* Pods-Video Trim Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim Tool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim Tool/Pods-Video Trim Tool.debug.xcconfig"; sourceTree = "<group>"; };
+		4E4C095C1316E2EABE781F1A /* Pods_Video_Trim_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F77327005E635DB5564DB59 /* Pods-Video Trim ToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim ToolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim ToolUITests/Pods-Video Trim ToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		542D701AA41928B7C562DA1A /* Pods-Video Trim ToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim ToolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim ToolTests/Pods-Video Trim ToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7945E550BDD9EF4D65D43180 /* Pods-Video Trim Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim Tool.release.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim Tool/Pods-Video Trim Tool.release.xcconfig"; sourceTree = "<group>"; };
+		A9C985BA42B668AE052A3E03 /* Pods-Video Trim ToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim ToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim ToolTests/Pods-Video Trim ToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9490623DB189E1E528F520C /* Pods-Video Trim ToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video Trim ToolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Video Trim ToolUITests/Pods-Video Trim ToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6CED626A96DDB45605DD06A /* Pods_Video_Trim_ToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_ToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 				3A6636FA1E43197600912862 /* Photos.framework in Frameworks */,
 				3A6D2D411E38D8E7008A41A0 /* AVFoundation.framework in Frameworks */,
 				3A6D2D3F1E38D8E0008A41A0 /* MobileCoreServices.framework in Frameworks */,
+				31ED97883609E3740B46B959 /* Pods_Video_Trim_Tool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4219AD4D87B7D3CFCB5D6C /* Pods_Video_Trim_ToolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +105,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF67CF13F0AA0589F26A9A1 /* Pods_Video_Trim_ToolUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		296205EAA1F445F507D408BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41BC00F9E08CFC01EC194259 /* Pods-Video Trim Tool.debug.xcconfig */,
+				7945E550BDD9EF4D65D43180 /* Pods-Video Trim Tool.release.xcconfig */,
+				542D701AA41928B7C562DA1A /* Pods-Video Trim ToolTests.debug.xcconfig */,
+				A9C985BA42B668AE052A3E03 /* Pods-Video Trim ToolTests.release.xcconfig */,
+				4F77327005E635DB5564DB59 /* Pods-Video Trim ToolUITests.debug.xcconfig */,
+				C9490623DB189E1E528F520C /* Pods-Video Trim ToolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3A682A961E3B586B002E7785 /* TrimRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +141,7 @@
 				3A6D2D2E1E38C75E008A41A0 /* Video Trim ToolUITests */,
 				3A6D2D0D1E38C75E008A41A0 /* Products */,
 				3A6D2D3D1E38D8E0008A41A0 /* Frameworks */,
+				296205EAA1F445F507D408BC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +196,9 @@
 				3A6636F91E43197600912862 /* Photos.framework */,
 				3A6D2D401E38D8E7008A41A0 /* AVFoundation.framework */,
 				3A6D2D3E1E38D8E0008A41A0 /* MobileCoreServices.framework */,
+				4E4C095C1316E2EABE781F1A /* Pods_Video_Trim_Tool.framework */,
+				F6CED626A96DDB45605DD06A /* Pods_Video_Trim_ToolTests.framework */,
+				304FA52B6FFECE252DAEE4C7 /* Pods_Video_Trim_ToolUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6D2D341E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim Tool" */;
 			buildPhases = (
+				1F1624EC19B6DF30F681E1E1 /* [CP] Check Pods Manifest.lock */,
 				3A6D2D081E38C75E008A41A0 /* Sources */,
 				3A6D2D091E38C75E008A41A0 /* Frameworks */,
 				3A6D2D0A1E38C75E008A41A0 /* Resources */,
+				0402CB0802D76C564828E8B8 /* [CP] Embed Pods Frameworks */,
+				78F690EE935184EAAFF1F236 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6D2D371E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolTests" */;
 			buildPhases = (
+				8CF789AFB07BC5E71ADBAFF1 /* [CP] Check Pods Manifest.lock */,
 				3A6D2D1C1E38C75E008A41A0 /* Sources */,
 				3A6D2D1D1E38C75E008A41A0 /* Frameworks */,
 				3A6D2D1E1E38C75E008A41A0 /* Resources */,
+				941C3F42FD52125DEF746899 /* [CP] Embed Pods Frameworks */,
+				C7D244AC7643E046E7BC68EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6D2D3A1E38C75E008A41A0 /* Build configuration list for PBXNativeTarget "Video Trim ToolUITests" */;
 			buildPhases = (
+				7BD79C3EA337A03799ED0E00 /* [CP] Check Pods Manifest.lock */,
 				3A6D2D271E38C75E008A41A0 /* Sources */,
 				3A6D2D281E38C75E008A41A0 /* Frameworks */,
 				3A6D2D291E38C75E008A41A0 /* Resources */,
+				67AAE9699B2E87C3242B5886 /* [CP] Embed Pods Frameworks */,
+				4E4FAAA1CDAE5FE31EE86886 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +367,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0402CB0802D76C564828E8B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim Tool/Pods-Video Trim Tool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F1624EC19B6DF30F681E1E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E4FAAA1CDAE5FE31EE86886 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim ToolUITests/Pods-Video Trim ToolUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67AAE9699B2E87C3242B5886 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim ToolUITests/Pods-Video Trim ToolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F690EE935184EAAFF1F236 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim Tool/Pods-Video Trim Tool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD79C3EA337A03799ED0E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF789AFB07BC5E71ADBAFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		941C3F42FD52125DEF746899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim ToolTests/Pods-Video Trim ToolTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D244AC7643E046E7BC68EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Video Trim ToolTests/Pods-Video Trim ToolTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A6D2D081E38C75E008A41A0 /* Sources */ = {
@@ -486,9 +665,11 @@
 		};
 		3A6D2D351E38C75E008A41A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BC00F9E08CFC01EC194259 /* Pods-Video Trim Tool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3N3C88D973;
 				INFOPLIST_FILE = "Video Trim Tool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -501,9 +682,11 @@
 		};
 		3A6D2D361E38C75E008A41A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7945E550BDD9EF4D65D43180 /* Pods-Video Trim Tool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3N3C88D973;
 				INFOPLIST_FILE = "Video Trim Tool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -515,6 +698,7 @@
 		};
 		3A6D2D381E38C75E008A41A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542D701AA41928B7C562DA1A /* Pods-Video Trim ToolTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +714,7 @@
 		};
 		3A6D2D391E38C75E008A41A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C985BA42B668AE052A3E03 /* Pods-Video Trim ToolTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +730,7 @@
 		};
 		3A6D2D3B1E38C75E008A41A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F77327005E635DB5564DB59 /* Pods-Video Trim ToolUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3N3C88D973;
@@ -559,6 +745,7 @@
 		};
 		3A6D2D3C1E38C75E008A41A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9490623DB189E1E528F520C /* Pods-Video Trim ToolUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3N3C88D973;
