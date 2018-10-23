@@ -1,4 +1,4 @@
-# RangeSliderVideoTrimmer
+# Video Trim
 
 Video trimmer With Two sided Range Slider
 
