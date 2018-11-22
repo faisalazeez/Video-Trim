@@ -1,6 +1,6 @@
 # Video Trim
 
-Video trimmer With Two sided Range Slider
+Video trimmer With Custom Two sided Range Slider
 
 ## Description
 
@@ -14,7 +14,7 @@ Croping with preview of video on range slider.
 ## Requirements
 
 ```
-* Swift 2.0 and abouve
+* Swift 2.0 and above
 * XCode 8 and above
 ```
 ## Author
