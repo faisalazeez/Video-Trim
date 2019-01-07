@@ -36,15 +36,15 @@
 
 /* Begin PBXFileReference section */
 		15651771559B49803B0A1A28DD1179F9 /* FDWaveformRenderOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDWaveformRenderOperation.swift; path = Source/FDWaveformRenderOperation.swift; sourceTree = "<group>"; };
-		1EB8752BA5A897322E27C5827AF9D71D /* Pods-Video Trim Tool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Video Trim Tool.modulemap"; sourceTree = "<group>"; };
+		1EB8752BA5A897322E27C5827AF9D71D /* Pods-Video Trim Tool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Video Trim Tool.modulemap"; sourceTree = "<group>"; };
 		32DAFD9FB9D753D67B957F9FB7F866CB /* FDWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FDWaveformView.xcconfig; sourceTree = "<group>"; };
-		37A4E8AF589FD3E16E91ABF4DB2A705A /* Pods-Video Trim ToolUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Video Trim ToolUITests.modulemap"; sourceTree = "<group>"; };
+		37A4E8AF589FD3E16E91ABF4DB2A705A /* Pods-Video Trim ToolUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Video Trim ToolUITests.modulemap"; sourceTree = "<group>"; };
 		3FAC34630FBE8A92CF0DB19FD1DCFEB0 /* Pods-Video Trim ToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Trim ToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		4480A0F024BBD573E2609E08DC82676D /* FDWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDWaveformView.swift; path = Source/FDWaveformView.swift; sourceTree = "<group>"; };
 		44D886DA9BFB515F7DD0C721609F2FA3 /* Pods-Video Trim ToolUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Trim ToolUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4B7C058C4F72C66CA3EC3051FAF80516 /* Pods-Video Trim ToolTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Trim ToolTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4B9C0448333A8189568594F95BBE6085 /* Pods_Video_Trim_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Video_Trim_Tool.framework; path = "Pods-Video Trim Tool.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		558E3062EE9E9526501205D62CA12304 /* Pods-Video Trim ToolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Video Trim ToolTests.modulemap"; sourceTree = "<group>"; };
+		4B9C0448333A8189568594F95BBE6085 /* Pods_Video_Trim_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		558E3062EE9E9526501205D62CA12304 /* Pods-Video Trim ToolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Video Trim ToolTests.modulemap"; sourceTree = "<group>"; };
 		5C4A4C8BC2B0822EC42F810B60867D1A /* Pods-Video Trim ToolTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Video Trim ToolTests-frameworks.sh"; sourceTree = "<group>"; };
 		5E607CB09D1A8978A39006076AB06880 /* FDWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDWaveformView-umbrella.h"; sourceTree = "<group>"; };
 		6010425EABE1AC5ACC299433FCE44C3E /* Pods-Video Trim Tool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Video Trim Tool-umbrella.h"; sourceTree = "<group>"; };
@@ -52,11 +52,11 @@
 		6B29E680F8F114C9B72877AF56C306B2 /* Pods-Video Trim ToolTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Trim ToolTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6EF5F0C44F55BC8D7B6564960B2C25A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73D3ACA71F9C7D930677E82402823D3C /* Pods-Video Trim ToolUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Video Trim ToolUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7EB01DC80A1519CA0E53E3870A9B3C85 /* Pods_Video_Trim_ToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Video_Trim_ToolTests.framework; path = "Pods-Video Trim ToolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB01DC80A1519CA0E53E3870A9B3C85 /* Pods_Video_Trim_ToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_ToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805645D2F395189002CBD495B80213F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80F14327BC9A1B1749EB6C95D0E4BEC6 /* Pods-Video Trim ToolTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Video Trim ToolTests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94947BD74ED5DEE04BC9705EE04205A1 /* FDWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FDWaveformView.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94947BD74ED5DEE04BC9705EE04205A1 /* FDWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FDWaveformView.modulemap; sourceTree = "<group>"; };
 		96EBD9C23C2FBB80B9ED4C91E45D7874 /* Pods-Video Trim Tool-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Video Trim Tool-acknowledgements.markdown"; sourceTree = "<group>"; };
 		980A52A9F8F8EF608EBC63201FD55214 /* Pods-Video Trim ToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Trim ToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A29C5FDC5DB179594942752C3547943B /* Pods-Video Trim ToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Trim ToolUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 		DAF728E8FAF702C93EDBBB7656626015 /* Pods-Video Trim Tool-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Video Trim Tool-frameworks.sh"; sourceTree = "<group>"; };
 		DE673012B00806BE070C5476F31BABB3 /* Pods-Video Trim ToolUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Video Trim ToolUITests-dummy.m"; sourceTree = "<group>"; };
 		E4D0CB3BD6A917FDDEB26F4960A9209C /* FDAudioContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FDAudioContext.swift; path = Source/FDAudioContext.swift; sourceTree = "<group>"; };
-		E57F43AE0BC205FD019981577221D7AC /* Pods_Video_Trim_ToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Video_Trim_ToolUITests.framework; path = "Pods-Video Trim ToolUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57F43AE0BC205FD019981577221D7AC /* Pods_Video_Trim_ToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Trim_ToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85BCAE2268F73F68EE9185C01499F78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2FD8C86253A41D6F85BB90A7D1089F1 /* FDWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FDWaveformView.framework; path = FDWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FD8C86253A41D6F85BB90A7D1089F1 /* FDWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AA546A9134690034E27B9C1672FA24 /* FDWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FDWaveformView-dummy.m"; sourceTree = "<group>"; };
 		F48BCD0F5EDB56B29971A86FB801F7A9 /* Pods-Video Trim ToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Video Trim ToolTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +159,6 @@
 				4480A0F024BBD573E2609E08DC82676D /* FDWaveformView.swift */,
 				35B3349C6C093CB091A0742AECE59D9C /* Support Files */,
 			);
-			name = FDWaveformView;
 			path = FDWaveformView;
 			sourceTree = "<group>";
 		};
@@ -368,7 +367,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1000;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -452,6 +451,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -459,6 +459,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -489,6 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -636,6 +638,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -643,6 +646,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

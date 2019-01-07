@@ -45,7 +45,14 @@ class AudioViewController:UIViewController
   {
     player?.stop()
   }
-
+    
+    @IBAction func cropAction(_ sender: Any)
+    {
+        let alert = UIAlertController(title: "Alert", message: "Audio conversion is under developement ", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 extension AudioViewController:MPMediaPickerControllerDelegate
@@ -92,11 +99,6 @@ extension AudioViewController:MPMediaPickerControllerDelegate
       print(error.localizedDescription)
     }
     
-  }
-  
-  func trimAudio()
-  {
-  
   }
   
 }
