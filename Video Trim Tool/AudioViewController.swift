@@ -82,14 +82,11 @@ extension AudioViewController:MPMediaPickerControllerDelegate
       try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
       try AVAudioSession.sharedInstance().setActive(true)
       
-      
       player = try AVAudioPlayer(contentsOf: url)
      // guard let player = player else { return }
       
       let total = player?.duration
       let float = (player?.currentTime)! / total!
-      
-      
       
     } catch let error {
       print(error.localizedDescription)

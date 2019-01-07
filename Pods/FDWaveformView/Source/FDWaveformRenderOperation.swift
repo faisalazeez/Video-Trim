@@ -190,7 +190,6 @@ final public class FDWaveformRenderOperation: Operation {
                 let readBuffer = CMSampleBufferGetDataBuffer(readSampleBuffer) else {
                     break
             }
-            
             // Append audio sample buffer into our current sample buffer
             var readBufferLength = 0
             var readBufferPointer: UnsafeMutablePointer<Int8>?
@@ -211,6 +210,7 @@ final public class FDWaveformRenderOperation: Operation {
                            downSampledLength: downSampledLength,
                            samplesPerPixel: samplesPerPixel,
                            filter: filter)
+            //print("Status: \(reader.status)")
         }
         
         // Process the remaining samples at the end which didn't fit into samplesPerPixel
@@ -229,11 +229,12 @@ final public class FDWaveformRenderOperation: Operation {
                            downSampledLength: downSampledLength,
                            samplesPerPixel: samplesPerPixel,
                            filter: filter)
+            //print("Status: \(reader.status)")
         }
         
         // if (reader.status == AVAssetReaderStatusFailed || reader.status == AVAssetReaderStatusUnknown)
-        // Something went wrong. Handle it.
-        if reader.status == .completed {
+        // Something went wrong. Handle it, or not depending on if you can get above to work
+        if reader.status == .completed || true{
             return (outputSamples, sampleMax)
         } else {
             print("FDWaveformRenderOperation failed to read audio: \(String(describing: reader.error))")
@@ -318,3 +319,16 @@ final public class FDWaveformRenderOperation: Operation {
         return image
     }
 }
+
+extension AVAssetReaderStatus : CustomStringConvertible{
+    public var description: String{
+        switch self{
+        case .reading: return "reading"
+        case .unknown: return "unknown"
+        case .completed: return "completed"
+        case .failed: return "failed"
+        case .cancelled: return "cancelled"
+        }
+    }
+}
+
