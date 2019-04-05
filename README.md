@@ -1,6 +1,6 @@
 # Video Trim
 
-Video trimmer With Custom Two sided Range Slider
+Video trim With Custom Two sided Range Slider
 
 ## Description
 
