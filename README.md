@@ -14,8 +14,8 @@ Croping with preview of video on range slider.
 ## Requirements
 
 ```
-* Swift 2.0 and above
-* XCode 8 and above
+* Swift 5.0 and above
+* XCode 12 and above
 ```
 ## Author
 
