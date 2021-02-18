@@ -56,7 +56,7 @@ class VideoMainViewController: UIViewController
   {
     
     super.viewDidLoad()
-    self.loadViews()
+    loadViews()
     // Do any additional setup after loading the view, typically from a nib.
   }
 
@@ -101,7 +101,7 @@ class VideoMainViewController: UIViewController
 
     
     //Allocating NsCahe for temp storage
-    self.cache = NSCache()
+    cache = NSCache()
   }
   
   //Action for select Video
@@ -113,7 +113,7 @@ class VideoMainViewController: UIViewController
     myImagePickerController.mediaTypes = [(kUTTypeMovie) as String]
     myImagePickerController.delegate   = self
     myImagePickerController.isEditing  = false
-    self.present(myImagePickerController, animated: true, completion: { _ in })
+    present(myImagePickerController, animated: true, completion: {  })
   }
   
   //Action for crop video
@@ -121,7 +121,7 @@ class VideoMainViewController: UIViewController
   {
     let start = Float(startTimeText.text!)
     let end   = Float(endTimeText.text!)
-    self.cropVideo(sourceURL1: url, startTime: start!, endTime: end!)
+    cropVideo(sourceURL1: url, startTime: start!, endTime: end!)
   }
 
 }
@@ -130,38 +130,33 @@ class VideoMainViewController: UIViewController
 extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate
 {
   //Delegate method of image picker
-  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
-  {
-    picker.dismiss(animated: true, completion: nil)
-    
-    url = info[UIImagePickerControllerMediaURL] as! NSURL
-    asset   = AVURLAsset.init(url: url as URL)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        url = info[UIImagePickerController.InfoKey(rawValue: UIImagePickerController.InfoKey.mediaURL.rawValue)] as? NSURL
+        asset   = AVURLAsset.init(url: url as URL)
 
-    thumbTime = asset.duration
-    thumbtimeSeconds      = Int(CMTimeGetSeconds(thumbTime))
-    
-    self.viewAfterVideoIsPicked()
-    
-    let item:AVPlayerItem = AVPlayerItem(asset: asset)
-    player                = AVPlayer(playerItem: item)
-    playerLayer           = AVPlayerLayer(player: player)
-    playerLayer.frame     = videoLayer.bounds
-    
-    playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-    player.actionAtItemEnd   = AVPlayerActionAtItemEnd.none
+        thumbTime = asset.duration
+        thumbtimeSeconds      = Int(CMTimeGetSeconds(thumbTime))
+        
+        viewAfterVideoIsPicked()
+        
+        let item:AVPlayerItem = AVPlayerItem(asset: asset)
+        player                = AVPlayer(playerItem: item)
+        playerLayer           = AVPlayerLayer(player: player)
+        playerLayer.frame     = videoLayer.bounds
+        
+            playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+            player.actionAtItemEnd   = AVPlayer.ActionAtItemEnd.none
 
-    let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapOnVideoLayer))
-    self.videoLayer.addGestureRecognizer(tap)
-    self.tapOnVideoLayer(tap: tap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapOnVideoLayer))
+        videoLayer.addGestureRecognizer(tap)
+        tapOnVideoLayer(tap: tap)
+        
+        videoLayer.layer.addSublayer(playerLayer)
+        player.play()
+    }
     
-    videoLayer.layer.addSublayer(playerLayer)
-    player.play()
-
-    
-    
-    
-}
-  
   func viewAfterVideoIsPicked()
   {
     //Rmoving player if alredy exists
@@ -170,7 +165,7 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
       playerLayer.removeFromSuperlayer()
     }
     
-    self.createImageFrames()
+    createImageFrames()
     
     //unhide buttons and view after video selection
     cropButton.isHidden         = false
@@ -182,19 +177,19 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
     isSliderEnd = true
     startTimeText.text! = "\(0.0)"
     endTimeText.text   = "\(thumbtimeSeconds!)"
-    self.createRangeSlider()
+    createRangeSlider()
   }
   
   //Tap action on video player
-  func tapOnVideoLayer(tap: UITapGestureRecognizer)
+    @objc func tapOnVideoLayer(tap: UITapGestureRecognizer)
   {
     if isPlaying
     {
-      self.player.play()
+      player.play()
     }
     else
     {
-      self.player.pause()
+      player.pause()
     }
     isPlaying = !isPlaying
   }
@@ -207,8 +202,8 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
     //creating assets
     let assetImgGenerate : AVAssetImageGenerator    = AVAssetImageGenerator(asset: asset)
     assetImgGenerate.appliesPreferredTrackTransform = true
-    assetImgGenerate.requestedTimeToleranceAfter    = kCMTimeZero;
-    assetImgGenerate.requestedTimeToleranceBefore   = kCMTimeZero;
+    assetImgGenerate.requestedTimeToleranceAfter    = CMTime.zero;
+    assetImgGenerate.requestedTimeToleranceBefore   = CMTime.zero;
     
     
     assetImgGenerate.appliesPreferredTrackTransform = true
@@ -225,10 +220,10 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
     {
       
       let imageButton = UIButton()
-      let xPositionForEach = CGFloat(self.imageFrameView.frame.width)/6
-      imageButton.frame = CGRect(x: CGFloat(startXPosition), y: CGFloat(0), width: xPositionForEach, height: CGFloat(self.imageFrameView.frame.height))
+      let xPositionForEach = CGFloat(imageFrameView.frame.width)/6
+      imageButton.frame = CGRect(x: CGFloat(startXPosition), y: CGFloat(0), width: xPositionForEach, height: CGFloat(imageFrameView.frame.height))
       do {
-        let time:CMTime = CMTimeMakeWithSeconds(Float64(startTime),Int32(maxLength.length))
+        let time:CMTime = CMTimeMakeWithSeconds(Float64(startTime),preferredTimescale: Int32(maxLength.length))
         let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
         let image = UIImage(cgImage: img)
         imageButton.setImage(image, for: .normal)
@@ -251,7 +246,7 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
   func createRangeSlider()
   {
     //Remove slider if already present
-    let subViews = self.frameContainerView.subviews
+    let subViews = frameContainerView.subviews
     for subview in subViews{
       if subview.tag == 1000 {
         subview.removeFromSuperview()
@@ -274,8 +269,8 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
   }
   
   //MARK: rangeSlider Delegate
-  func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
-    self.player.pause()
+    @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
+    player.pause()
     
     if(isSliderEnd == true)
     {
@@ -290,19 +285,19 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
     startTimeText.text = "\(rangeSlider.lowerValue)"
     endTimeText.text   = "\(rangeSlider.upperValue)"
     
-    print(rangeSlider.lowerLayerSelected)
+    //print(rangeSlider.lowerLayerSelected)
     if(rangeSlider.lowerLayerSelected)
     {
-      self.seekVideo(toPos: CGFloat(rangeSlider.lowerValue))
+      seekVideo(toPos: CGFloat(rangeSlider.lowerValue))
 
     }
     else
     {
-      self.seekVideo(toPos: CGFloat(rangeSlider.upperValue))
+      seekVideo(toPos: CGFloat(rangeSlider.upperValue))
       
     }
         
-    print(startTime)
+    //print(startTime)
   }
   
   
@@ -318,13 +313,13 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
   
   //Seek video when slide
   func seekVideo(toPos pos: CGFloat) {
-    self.videoPlaybackPosition = pos
-    let time: CMTime = CMTimeMakeWithSeconds(Float64(self.videoPlaybackPosition), self.player.currentTime().timescale)
-    self.player.seek(to: time, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+    videoPlaybackPosition = pos
+    let time: CMTime = CMTimeMakeWithSeconds(Float64(videoPlaybackPosition), preferredTimescale: player.currentTime().timescale)
+    player.seek(to: time, toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
     
     if(pos == CGFloat(thumbtimeSeconds))
     {
-    self.player.pause()
+    player.pause()
     }
   }
   
@@ -343,11 +338,11 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
     if mediaType == kUTTypeMovie as String || mediaType == "mp4" as String
     {
       let length = Float(asset.duration.value) / Float(asset.duration.timescale)
-      print("video length: \(length) seconds")
+      //print("video length: \(length) seconds")
       
       let start = startTime
       let end = endTime
-      print(documentDirectory)
+      //print(documentDirectory)
       var outputURL = documentDirectory.appendingPathComponent("output")
       do {
         try manager.createDirectory(at: outputURL, withIntermediateDirectories: true, attributes: nil)
@@ -362,7 +357,7 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
       
       guard let exportSession = AVAssetExportSession(asset: asset, presetName: AVAssetExportPresetHighestQuality) else {return}
       exportSession.outputURL = outputURL
-      exportSession.outputFileType = AVFileTypeMPEG4
+        exportSession.outputFileType = AVFileType.mp4
       
       let startTime = CMTime(seconds: Double(start ), preferredTimescale: 1000)
       let endTime = CMTime(seconds: Double(end ), preferredTimescale: 1000)
@@ -373,12 +368,12 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
         switch exportSession.status {
         case .completed:
           print("exported at \(outputURL)")
-          self.saveToCameraRoll(URL: outputURL as NSURL!)
+                self.saveToCameraRoll(URL: outputURL as NSURL?)
         case .failed:
-          print("failed \(exportSession.error)")
+            print("failed \(String(describing: exportSession.error))")
           
         case .cancelled:
-          print("cancelled \(exportSession.error)")
+            print("cancelled \(String(describing: exportSession.error))")
           
         default: break
   }}}}
@@ -389,10 +384,12 @@ extension VideoMainViewController:UIImagePickerControllerDelegate,UINavigationCo
       PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: URL as URL)
     }) { saved, error in
       if saved {
-        let alertController = UIAlertController(title: "Cropped video was successfully saved", message: nil, preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        self.present(alertController, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "Cropped video was successfully saved", message: nil, preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }        
     }}}
   
 }
